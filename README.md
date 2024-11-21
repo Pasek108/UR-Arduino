@@ -25,6 +25,7 @@ I created second project on my own: [UR-MatchstickEquations](https://github.com/
 - [Arduino Yún](https://docs.arduino.cc/retired/boards/arduino-yun/)
 - [Arduino C++](https://docs.arduino.cc/language-reference/)
 - [Arduino IDE](https://www.arduino.cc/en/software)
+- [WOKWI - Arduino simulator](https://wokwi.com/projects/new/arduino-uno)
 - Windows
 
 <br>
