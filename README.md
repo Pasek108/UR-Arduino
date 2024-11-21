@@ -1,7 +1,7 @@
 <h1 align="center">UR-Arduino - Readme</h1>
 <p align="center">
   <strong>
-    Solutions to Haskell exercises from my studies at <a href="https://www.ur.edu.pl/pl/kolegia/kolegium-nauk-przyrodniczych">University of Rzeszów (UR)</a>
+    Solutions to Arduino exercises from my studies at <a href="https://www.ur.edu.pl/pl/kolegia/kolegium-nauk-przyrodniczych">University of Rzeszów (UR)</a>
   </strong>
 </p>
 <div align="center">
