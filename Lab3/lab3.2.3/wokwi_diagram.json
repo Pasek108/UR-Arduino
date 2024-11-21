@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -243, "left": 12.4, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -166.8,
+      "left": 109.4,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -166.8,
+      "left": 205.4,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": -166.8,
+      "left": 157.4,
+      "attrs": { "color": "blue" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -241.3, "left": -67.4, "attrs": {} }
+  ],
+  "connections": [
+    [ "uno:5V", "bb1:bp.25", "red", [ "v29.3", "h185.6", "v-277.5" ] ],
+    [ "uno:GND.2", "bb1:bn.25", "black", [ "v19.7", "h166.5", "v-257.9" ] ],
+    [ "pot1:GND", "bb1:bn.1", "black", [ "v124.8", "h9.6" ] ],
+    [ "bb1:bp.1", "pot1:VCC", "red", [ "v-0.9", "h-56" ] ],
+    [ "pot1:SIG", "uno:A0", "orange", [ "v403.2", "h239.6" ] ],
+    [ "led2:A", "bb1:21b.f", "", [ "$bb" ] ],
+    [ "led2:C", "bb1:20b.f", "", [ "$bb" ] ],
+    [ "led3:A", "bb1:16b.f", "", [ "$bb" ] ],
+    [ "led3:C", "bb1:15b.f", "", [ "$bb" ] ],
+    [ "led1:A", "bb1:11b.f", "", [ "$bb" ] ],
+    [ "led1:C", "bb1:10b.f", "", [ "$bb" ] ],
+    [ "uno:8", "bb1:21b.j", "red", [ "v-18.6", "h57.4" ] ],
+    [ "uno:9", "bb1:16b.j", "blue", [ "v-28.2", "h19.4" ] ],
+    [ "uno:10", "bb1:11b.j", "green", [ "v-28.2", "h0.1" ] ],
+    [ "bb1:20b.j", "bb1:bn.16", "black", [ "v0" ] ],
+    [ "bb1:15b.j", "bb1:bn.12", "black", [ "v0" ] ],
+    [ "bb1:10b.j", "bb1:bn.8", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

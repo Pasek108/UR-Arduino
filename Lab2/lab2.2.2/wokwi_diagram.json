@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -233.4, "left": 12.4, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": -224.4, "left": 71, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -120,
+      "left": 66.65,
+      "rotate": 90,
+      "attrs": { "value": "90" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn1",
+      "top": -143.5,
+      "left": 253.1,
+      "rotate": 90,
+      "attrs": { "color": "grey" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -231.7, "left": -77, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -224.4,
+      "left": 90.2,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -120,
+      "left": 85.85,
+      "rotate": 90,
+      "attrs": { "value": "90" }
+    }
+  ],
+  "connections": [
+    [ "uno:7", "bb1:26b.j", "gray", [ "v-18.6", "h79.8" ] ],
+    [ "bb1:24b.j", "bb1:bn.20", "black", [ "v0" ] ],
+    [ "bb1:6t.e", "bb1:bn.5", "black", [ "v0" ] ],
+    [ "pot1:VCC", "bb1:bp.1", "red", [ "v0" ] ],
+    [ "uno:5V", "bb1:bp.25", "red", [ "v38.9", "h195.2", "v-277.5" ] ],
+    [ "uno:GND.2", "bb1:bn.25", "black", [ "v29.3", "h176.1", "v-259.2" ] ],
+    [ "pot1:GND", "bb1:bn.1", "black", [ "v124.8", "h9.6" ] ],
+    [ "pot1:SIG", "uno:A0", "gold", [ "v374.4", "h249.2" ] ],
+    [ "led1:A", "bb1:7t.a", "", [ "$bb" ] ],
+    [ "led1:C", "bb1:6t.a", "", [ "$bb" ] ],
+    [ "led2:A", "bb1:9t.a", "", [ "$bb" ] ],
+    [ "led2:C", "bb1:8t.a", "", [ "$bb" ] ],
+    [ "btn1:1.l", "bb1:26t.e", "", [ "$bb" ] ],
+    [ "btn1:2.l", "bb1:24t.e", "", [ "$bb" ] ],
+    [ "btn1:1.r", "bb1:26b.f", "", [ "$bb" ] ],
+    [ "btn1:2.r", "bb1:24b.f", "", [ "$bb" ] ],
+    [ "r1:1", "bb1:7t.e", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:7b.i", "", [ "$bb" ] ],
+    [ "r2:1", "bb1:9t.e", "", [ "$bb" ] ],
+    [ "r2:2", "bb1:9b.i", "", [ "$bb" ] ],
+    [ "bb1:8t.e", "bb1:bn.6", "black", [ "v0" ] ],
+    [ "uno:12", "bb1:7b.j", "red", [ "v-18.6", "h-38.5" ] ],
+    [ "uno:11", "bb1:9b.j", "limegreen", [ "v-28.2", "h-28.8" ] ]
+  ],
+  "dependencies": {}
+}
