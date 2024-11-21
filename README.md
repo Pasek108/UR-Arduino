@@ -1,4 +1,4 @@
-<h1 align="center">UR-Haskell - Readme</h1>
+<h1 align="center">UR-Arduino - Readme</h1>
 <p align="center">
   <strong>
     Solutions to Haskell exercises from my studies at <a href="https://www.ur.edu.pl/pl/kolegia/kolegium-nauk-przyrodniczych">University of Rzeszów (UR)</a>
@@ -13,30 +13,31 @@
 <br>
 
 ## About :dart:
-These are my solutions to laboratory exercises carried out as part of the course "Języki i paradygmaty programowania" (Programming languages ​​and paradigms) in the Computer Science program at UR. 
+These are my solutions to laboratory exercises carried out as part of the course "Inżynieria systemów mikroinformatycznych" (Microcomputer Systems Engineering) in the Computer Science program at UR. 
 
-The course covered the basics of the functional programming language Haskell and the logic programming language Prolog ([UR-Prolog](https://github.com/Pasek108/UR-Prolog)). The acquired knowledge was tested in the form of a practical test.
+The course covered the basics of the Arduino programming using fundamental components. The acquired knowledge was tested in the form of a project. 
+
+I created second project on my own: [UR-MatchstickEquations](https://github.com/Pasek108/UR-MatchstickEquations).
 
 <br>
 
 ## Technologies :hammer_and_wrench:
-- [Haskell](https://www.haskell.org)
-- [ConTEXT Editor](https://www.contexteditor.org)
+- [Arduino Yún](https://docs.arduino.cc/retired/boards/arduino-yun/)
+- [Arduino C++](https://docs.arduino.cc/language-reference/)
+- [Arduino IDE](https://www.arduino.cc/en/software)
 - Windows
 
 <br>
 
 ## Key learnings :mortar_board:
 - Reading documentation
-- Using interpreter
-- Program compilation
-- Modules
-- Data types
-- Operators and defining new operators 
-- Lists and basic lists functions
-- String operations
-- File operations
-- Sorting and using a binary tree
+- The structure of Arduino
+- Arduino C++ programming basics
+- Building circuits on breadboard
+- Using LEDs, resistors, buttons
+- Analog input (potentiometer)
+- PWM analog output (RGB LED)
+- Serial communication
 
 <br>
 
