@@ -13,7 +13,7 @@
 <br>
 
 ## About :dart:
-These are my solutions to laboratory exercises carried out as part of the course "Inżynieria systemów mikroinformatycznych" (Microcomputer Systems Engineering) in the Computer Science program at UR. 
+These are my solutions to laboratory exercises carried out as part of the course "Inżynieria systemów mikroinformatycznych" (Microcomputer systems engineering) in the Computer Science program at UR. 
 
 The course covered the basics of the Arduino programming using fundamental components. The acquired knowledge was tested in the form of a project. 
 
