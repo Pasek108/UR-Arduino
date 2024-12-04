@@ -1,42 +1,5 @@
 /*-------------------------------------------------------------------------------
 
-Project
-
-Using the program skeleton below, propose your own concept for a great project 
-using the learned electronic components.
-
-String command;
-
-void setup() {
-  Serial.begin(9600); // Initialize serial communication at 9600 baud
-}
-
-void loop() {
-  if (Serial.available()) { 
-    command = Serial.readStringUntil('\n');
-
-    if (command.equals("init")) {
-      initialize();
-    } 
-    else if (command.equals("send")) {
-      send_message();
-    } 
-    else if (command.equals("data")) {
-      get_data();
-    } 
-    else if (command.equals("result")) {
-      show_result();
-    } 
-    else {
-      Serial.println("Invalid command");
-    }
-  }
-}
-
--------------------------------------------------------------------------------*/
-
-/*-------------------------------------------------------------------------------
-
 How to play
 
 Your task is to defuse the bomb before it explodes.
@@ -50,6 +13,7 @@ Your task is to defuse the bomb before it explodes.
    - The margin of error is approximately 3.9% (values between 0 and 255, ±10).  
    - Check if the RGB code is correct using the 'send' command.  
    - The first mistake starts a 1m 30s timer; subsequent mistakes reduce the 
+     timer by 30s each.
      timer by 30s each.
 
 3. Defuse the bomb using the password before it explodes (if the timer is 
