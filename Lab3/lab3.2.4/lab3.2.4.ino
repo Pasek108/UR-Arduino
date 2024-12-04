@@ -1,38 +1,3 @@
-/*-------------------------------------------------------------------------------
-
-2.4 Using the program skeleton below, propose your own concept for a great 
-	project using the learned electronic components.
-
-String command;
-
-void setup() {
-  Serial.begin(9600); // Initialize serial communication at 9600 baud
-}
-
-void loop() {
-  if (Serial.available()) { 
-    command = Serial.readStringUntil('\n');
-
-    if (command.equals("init")) {
-      initialize();
-    } 
-    else if (command.equals("send")) {
-      send_message();
-    } 
-    else if (command.equals("data")) {
-      get_data();
-    } 
-    else if (command.equals("result")) {
-      show_result();
-    } 
-    else {
-      Serial.println("Invalid command");
-    }
-  }
-}
-
--------------------------------------------------------------------------------*/
-
 #include <Bounce2.h>
 
 /* ---------------- BOARD ELEMENTS ---------------- */
@@ -102,7 +67,7 @@ void setup () {
   while (!Serial);
   Serial.begin(9600);
   Serial.println("Memory game.");
-  Serial.println("Use potentiometer to set leds blinking time.");
+  Serial.println("Use potentiometer to set LEDs blinking time.");
   Serial.println("Type 'start' to start the game.");
   Serial.println("");
 
